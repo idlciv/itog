@@ -1,0 +1,230 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+body {
+    height: 100%;
+    background-image: url("8.jpg");
+    color: #095a09;
+    font-size: 1.2rem;
+    line-height: 1.6;
+     text-align: center;
+}
+
+/* верхнее меню */
+.top-bar {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 15px 20px;
+    background-color: #FAFAD2;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.logo {
+    font-size: clamp(1rem, 2vw, 1.5rem); 
+    font-weight: bold;
+    color: #db2f11;
+    text-decoration: none;
+    flex: 1;
+    min-width: 200px;
+    text-align: left;
+    margin-bottom: 10px;
+    }
+
+
+.nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: flex-end;
+    align-items: center;
+    flex: 2;
+}
+
+.nav a {
+    color: #db2f11;
+    text-decoration: none;
+    font-weight: 500;
+    padding: 5px 10px;
+    transition: all 0.3s ease;
+     white-space: nowrap;
+    font-size: clamp(0.9rem, 1.5vw, 1rem);
+}
+
+.nav a:hover,
+.nav a:focus {
+   
+    color: #4d9ac7;
+    outline: none;
+}
+
+.nav a:visited {
+   
+    color: #830e79;
+    outline: none;
+}
+
+@media (max-width: 767px) {
+    .top-bar {
+        flex-direction: column;
+        text-align: center;
+        gap: 15px;
+    }
+    
+    .logo {
+        font-size: 1.3rem;
+    }
+    
+    .nav {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+        width: 100%;
+    }
+    
+    .nav a {
+        padding: 8px 12px;
+        min-width: 140px;
+    }
+}
+.buttonnav{
+    width:180px;
+    height: 40px;
+    display: block;
+    color: #830e79;
+    background-color: #e77d04;
+    transition: 1s;
+    font-size: 1rem;
+     text-align: center;
+    padding: 12px;
+    border-radius: 4px;
+    text-decoration: none;
+    margin: 30px auto 15px;
+    font-weight: 500;
+    border: 2px solid #864108;
+    
+}
+.buttonnav:hover{
+   background-color: #FAFAD2; 
+    transition: 1s;
+}
+.buttonnav:visited{
+   background-color: #cdd8cf;
+    transition: 1s;
+}
+
+/* Общие стили для секций */
+main section {
+    margin-bottom: 40px;
+}
+
+section h2 {
+    color: #db2f11;
+    
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+/* объединённые стили */
+.ai-definition-card,
+.ai-application-card {
+   
+    padding: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+
+.ai-definition-card h3,
+.ai-application-card h3 {
+       color: #e77d04;
+
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+}
+
+.ai-definition-card p,
+.ai-application-card p {
+    font-size: 1.2rem;
+       color: #095a09;
+}
+
+/* Сетки */
+.ai-definition-grid,
+.ai-applications-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    margin-bottom: 30px;
+}
+
+/* направления*/
+.blok2 {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.blokid {
+   
+    padding: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+}
+
+
+.blokid h3 {
+        color: #e77d04;
+
+    margin-bottom: 10px;
+    font-size: 1.3rem;
+}
+
+.blokid p {
+    font-size: 1.2rem;
+      color: #095a09;
+}
+
+
+
+/* Футер */
+footer {
+    background-color: #FAFAD2;
+    color: #095a09;
+    font-size: 1rem;
+    text-align:center;
+    padding: 20px;
+    margin-top:40px;
+    border-radius:5px;
+}
+.footer-links {
+    margin-bottom: 15px;
+    font-size: 1rem;
+}
+
+.footer-links a {
+    color: #db2f11;
+    margin: 0 10px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+    font-size: 1rem;
+    }
+
+.footer-links a:hover,
+.footer-links a:focus {
+     color: #4d9ac7;
+}
+.footer-links a:visited {
+   
+    color: #830e79;
+    outline: none;
+}
